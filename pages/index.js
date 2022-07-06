@@ -1,18 +1,16 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Keypair } from "maci-domainobjs";
+import { useEffect, useState } from 'react';
 
 
-export const getStaticProps = () => {
-  const maciKey = new Keypair().pubKey.serialize();
-  return {
-    props: {
-      maciKey,
-    },
-  };
-};
+export default function Home() {
+  const [ maciKey, setMaciKey ] = useState('')
 
-export default function Home({ maciKey }) {
+  useEffect(() => {
+    setMaciKey(() => new Keypair().pubKey.serialize())
+  }, [])
+
   return (
     <div className={styles.container}>
       <Head>
