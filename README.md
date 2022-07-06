@@ -1,7 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to demonstrate the use of [MACI](https://www.npmjs.com/package/maci-domainobjs) keypair generation.
 
-See the [home page](https://github.com/yuetloo/maci-key/blob/main/pages/index.js) for the call to generate MACI keypair.
-
 ## Getting Started
 
 First, run the development server:
