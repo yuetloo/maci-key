@@ -25,6 +25,7 @@ jobs:
       run: |
         yarn install --frozen-lockfile
         yarn build
+        cp README.md build
     - name: Cache build
       uses: actions/cache@v2
       with:
