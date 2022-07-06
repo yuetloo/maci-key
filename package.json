@@ -1,6 +1,7 @@
 {
-  "name": "my-key",
+  "name": "maci-key",
   "version": "0.1.0",
+  "homepage": "https://yuetloo.github.io/maci-key",
   "private": true,
   "scripts": {
     "dev": "next dev",
